@@ -61,3 +61,212 @@ h3 {
 p {
   color: $text-secondary;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 5%;
+  background-color: $background;
+}
+
+.header__logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: $spacing-md;
+}
+
+.header__nav a {
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-secondary;
+  transition: color 0.2s ease;
+}
+
+.header__nav a:hover,
+.header__nav a:focus-visible {
+  color: $text-primary;
+}
+
+.header__menu {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.header__menu span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: $text-primary;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: $spacing-lg;
+  min-height: 650px;
+  padding: 80px 5%;
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__subtitle {
+  margin-bottom: $spacing-sm;
+  color: $blue-primary;
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin-bottom: $spacing-md;
+  font-weight: 700;
+}
+
+.hero__text {
+  max-width: 650px;
+  margin-bottom: $spacing-lg;
+  font-size: 18px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: $radius-button;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button--primary {
+  background-color: $blue-button;
+  color: $text-primary;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background-color: $blue-primary;
+}
+
+.button--secondary {
+  background-color: $surface;
+  border: 1px solid $blue-primary;
+  color: $text-primary;
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible {
+  background-color: $blue-primary;
+}
+
+.button:focus-visible,
+.header__nav a:focus-visible {
+  outline: 3px solid $orange-accent;
+  outline-offset: 3px;
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: $spacing-lg;
+  padding: 100px 5%;
+}
+
+.about__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.about__visual img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: $radius-card;
+}
+
+.about__content {
+  max-width: 650px;
+}
+
+.section__label {
+  margin-bottom: $spacing-sm;
+  color: $blue-primary;
+  font-weight: 600;
+}
+
+.about h2 {
+  margin-bottom: $spacing-md;
+}
+
+.about__content > p {
+  margin-bottom: $spacing-sm;
+}
+
+.about__strengths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+  margin-top: $spacing-lg;
+}
+
+.about__strengths h3 {
+  margin-bottom: $spacing-xs;
+}
+
+.skills {
+  padding: 100px 5%;
+}
+
+.skills > h2 {
+  margin-bottom: $spacing-lg;
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+}
+
+.skills__group {
+  padding: $spacing-md;
+  background-color: $surface;
+  border-radius: $radius-card;
+}
+
+.skills__group h3 {
+  margin-bottom: $spacing-sm;
+}
+
+.skills__group ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-xs;
+}
+
+.skills__group li {
+  padding: 10px 12px;
+  color: $text-secondary;
+}
