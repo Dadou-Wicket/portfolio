@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de David Maron, développeur web spécialisé en développement front-end et back-end."
+    />
+    <title>David Maron — Développeur Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#accueil" class="header__logo">DAVID MARON — DÉVELOPPEUR WEB</a>
+      <nav class="header__nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__menu" type="button" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero__content">
+          <p class="hero__subtitle">DÉVELOPPEUR WEB</p>
+          <h1>
+            Je crée des expériences web modernes, accessibles et performantes.
+          </h1>
+          <p class="hero__text">
+            Je développe des interfaces web avec une attention particulière
+            portée à l'expérience utilisateur, à l'accessibilité et à la qualité
+            du code.
+          </p>
+          <div class="hero__actions">
+            <a href="#projets" class="button button--primary"
+              >VOIR MES PROJETS</a
+            >
+            <a href="#contact" class="button button--secondary">ME CONTACTER</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img
+            src="assets/images/hero.webp"
+            alt="Illustration représentant le développement web"
+          />
+        </div>
+      </section>
+      <section class="about" id="a-propos">
+        <div class="about__visual">
+          <img
+            src="assets/images/about.webp"
+            alt="Illustration représentant David Maron, développeur web"
+          />
+        </div>
+        <div class="about__content">
+          <p class="section__label">À PROPOS</p>
+          <h2>À propos de moi</h2>
+          <p>
+            Je suis développeur web et j'ai développé mes compétences à travers
+            différents projets de formation mêlant intégration, JavaScript,
+            React, API, optimisation et accessibilité.
+          </p>
+          <p>
+            Mon objectif est de concevoir des sites modernes, responsive,
+            accessibles et adaptés aux besoins des utilisateurs.
+          </p>
+          <div class="about__strengths">
+            <div>
+              <h3>Qualité</h3>
+              <p>Un code structuré, maintenable et pensé pour évoluer.</p>
+            </div>
+            <div>
+              <h3>Accessibilité</h3>
+              <p>
+                Des interfaces conçues pour être utilisables par le plus grand
+                nombre.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="competences">
+        <p class="section__label">COMPÉTENCES</p>
+        <h2>Technologies et domaines de compétences</h2>
+        <div class="skills__content">
+          <div class="skills__group">
+            <h3>Technologies</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS / Sass</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Domaines de compétences</h3>
+            <ul>
+              <li>Front-end</li>
+              <li>Back-end</li>
+              <li>API / Données</li>
+              <li>Outils / Qualité</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projets">
+        <p class="section__label">MES PROJETS</p>
+        <h2>Projets réalisés</h2>
+        <div class="projects__list">
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="assets/images/nina-carducci.webp"
+                alt="Aperçu du site de la photographe Nina Carducci"
+              />
+            </div>
+            <div class="project-card__content">
+              <h3>Nina Carducci</h3>
+              <p class="project-card__technologies">
+                HTML • CSS • JavaScript • Bootstrap • jQuery
+              </p>
+              <h4>Contexte et objectifs</h4>
+              <p>
+                Audit et optimisation d'un site existant afin d'améliorer ses
+                performances, son référencement, son accessibilité et son
+                fonctionnement.
+              </p>
+              <h4>Résultats</h4>
+              <p>
+                Optimisation importante des images, correction des anomalies
+                fonctionnelles et amélioration des performances, de
+                l'accessibilité et du SEO.
+              </p>
+              <h4>Perspectives</h4>
+              <p>
+                Poursuivre les tests manuels d'accessibilité et les
+                optimisations après les évolutions du site.
+              </p>
+              <div class="project-card__links">
+                <a
+                  href="#"
+                  aria-label="Voir le repository GitHub du projet Nina Carducci"
+                  >GitHub</a
+                >
+                <a
+                  href="#"
+                  aria-label="Voir la démonstration du projet Nina Carducci"
+                  >Démo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="assets/images/sophie-bluel.webp"
+                alt="Aperçu du portfolio de l'architecte Sophie Bluel"
+              />
+            </div>
+            <div class="project-card__content">
+              <h3>Sophie Bluel</h3>
+              <p class="project-card__technologies">
+                HTML • CSS • JavaScript • API
+              </p>
+              <h4>Contexte et objectifs</h4>
+              <p>
+                Transformer un site statique en portfolio dynamique capable de
+                communiquer avec une API et de gérer une authentification
+                administrateur.
+              </p>
+              <h4>Résultats</h4>
+              <p>
+                Création dynamique des projets, filtres par catégories,
+                authentification JWT et interface d'administration permettant
+                d'ajouter et de supprimer des projets.
+              </p>
+              <h4>Perspectives</h4>
+              <p>
+                Continuer à améliorer la séparation des responsabilités et la
+                maintenabilité du code.
+              </p>
+              <div class="project-card__links">
+                <a
+                  href="#"
+                  aria-label="Voir le repository GitHub du projet Sophie Bluel"
+                  >GitHub</a
+                >
+                <a
+                  href="#"
+                  aria-label="Voir la démonstration du projet Sophie Bluel"
+                  >Démo</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image">
+              <img
+                src="assets/images/kasa.webp"
+                alt="Aperçu de l'application de location immobilière Kasa"
+              />
+            </div>
+            <div class="project-card__content">
+              <h3>Kasa</h3>
+              <p class="project-card__technologies">
+                React • Sass • React Router • API
+              </p>
+              <h4>Contexte et objectifs</h4>
+              <p>
+                Refondre une plateforme de location immobilière en React à
+                partir de maquettes desktop et mobile.
+              </p>
+              <h4>Résultats</h4>
+              <p>
+                Création de composants réutilisables, navigation avec React
+                Router, récupération des données depuis une API et adaptation
+                responsive.
+              </p>
+              <h4>Perspectives</h4>
+              <p>
+                Continuer à enrichir les fonctionnalités et à améliorer
+                l'expérience utilisateur.
+              </p>
+              <div class="project-card__links">
+                <a
+                  href="#"
+                  aria-label="Voir le repository GitHub du projet Kasa"
+                  >GitHub</a
+                >
+                <a href="#" aria-label="Voir la démonstration du projet Kasa"
+                  >Démo</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <p class="section__label">CONTACT</p>
+        <h2>Parlons de votre projet</h2>
+        <p>
+          Vous avez un projet web ou souhaitez échanger ? N'hésitez pas à me
+          contacter.
+        </p>
+        <form class="contact__form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="button button--primary">ENVOYER</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>DAVID MARON — DÉVELOPPEUR WEB</p>
+      <div class="footer__links">
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#">Mentions légales</a>
+      </div>
+      <p>© 2026 — Tous droits réservés</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
