@@ -270,3 +270,85 @@ p {
   padding: 10px 12px;
   color: $text-secondary;
 }
+
+.projects {
+  padding: 100px 5%;
+}
+
+.projects > h2 {
+  margin-bottom: $spacing-lg;
+}
+
+.projects__list {
+  display: grid;
+  gap: $spacing-lg;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-lg;
+  padding: $spacing-md;
+  background-color: $surface;
+  border-radius: $radius-card;
+}
+
+.project-card__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: $radius-card;
+  background-color: $background;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__content h3 {
+  margin-bottom: $spacing-xs;
+}
+
+.project-card__technologies {
+  margin-bottom: $spacing-md;
+  color: $blue-primary;
+  font-weight: 600;
+}
+
+.project-card__content h4 {
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-xs;
+  font-size: 18px;
+  color: $text-primary;
+}
+
+.project-card__content p {
+  margin-bottom: $spacing-sm;
+}
+
+.project-card__links {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: $spacing-md;
+}
+
+.project-card__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid $blue-primary;
+  border-radius: $radius-button;
+  color: $text-primary;
+  font-weight: 600;
+}
+
+.project-card__links a:hover,
+.project-card__links a:focus-visible {
+  background-color: $blue-primary;
+}
