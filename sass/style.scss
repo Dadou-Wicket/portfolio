@@ -352,3 +352,66 @@ p {
 .project-card__links a:focus-visible {
   background-color: $blue-primary;
 }
+
+.contact {
+  padding: 100px 5%;
+}
+
+.contact > h2 {
+  margin-bottom: $spacing-sm;
+}
+
+.contact > p {
+  max-width: 650px;
+  margin-bottom: $spacing-lg;
+}
+
+.contact__form {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: $surface;
+  border: 1px solid $text-secondary;
+  border-radius: $radius-button;
+  color: $text-primary;
+}
+
+.form-group input {
+  min-height: 48px;
+}
+
+.form-group textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 3px solid $blue-primary;
+  outline-offset: 2px;
+  border-color: $blue-primary;
+}
+
+.contact .button {
+  border: 0;
+  cursor: pointer;
+  align-self: flex-start;
+}
