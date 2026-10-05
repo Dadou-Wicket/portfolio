@@ -414,4 +414,31 @@ p {
   align-self: flex-start;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 5%;
+  background-color: #1e293b;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__links a {
+  color: #94a3b8;
+}
+
+.footer__links a:hover,
+.footer__links a:focus-visible {
+  color: #f8fafc;
+}
+
 /*# sourceMappingURL=style.css.map */

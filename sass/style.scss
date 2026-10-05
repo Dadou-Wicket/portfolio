@@ -415,3 +415,30 @@ p {
   cursor: pointer;
   align-self: flex-start;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-md;
+  padding: $spacing-md 5%;
+  background-color: $surface;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer__links {
+  display: flex;
+  gap: $spacing-md;
+}
+
+.footer__links a {
+  color: $text-secondary;
+}
+
+.footer__links a:hover,
+.footer__links a:focus-visible {
+  color: $text-primary;
+}
