@@ -101,14 +101,6 @@ p {
   box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
 }
 
-.back-to-top:hover,
-.back-to-top:focus-visible {
-  transform: translateY(-4px) scale(1.05);
-  background-color: $background;
-  border-color: $blue-primary;
-  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
-}
-
 .back-to-top:focus-visible {
   outline: 3px solid $purple-secondary;
   outline-offset: 3px;
@@ -361,7 +353,7 @@ p {
 }
 
 .about__highlight {
-  color: $purple-secondary;
+  color: $purple-text;
   font-weight: 600;
 }
 
@@ -489,7 +481,7 @@ p {
 
 .skills__domain h4 {
   margin-bottom: $spacing-sm;
-  color: $purple-secondary;
+  color: $purple-text;
   font-size: 18px;
   transition: transform 0.2s ease;
 }
@@ -586,9 +578,9 @@ p {
 
 .project-card__technologies span {
   padding: 6px 12px;
-  background-color: $purple-secondary;
+  background-color: $purple-button;
   color: $text-primary;
-  border: 1px solid $purple-secondary;
+  border: 1px solid $purple-button;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
@@ -630,9 +622,9 @@ p {
   justify-content: center;
   min-height: 44px;
   padding: 10px 18px;
-  border: 1px solid $blue-primary;
+  border: 1px solid $blue-button;
   border-radius: $radius-button;
-  background-color: $blue-primary;
+  background-color: $blue-button;
   color: $text-primary;
   font-weight: 600;
   transition:
@@ -645,8 +637,8 @@ p {
 .project-card__links a:hover,
 .project-card__links a:focus-visible {
   transform: translateY(-3px) scale(1.03);
-  background-color: $purple-secondary;
-  border-color: $purple-secondary;
+  background-color: $purple-button;
+  border-color: $purple-button;
   box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3);
 }
 
@@ -953,6 +945,7 @@ p {
     font-size: 14px;
     line-height: 1.2;
   }
+
   .skills__domains-grid {
     grid-template-columns: 1fr;
   }

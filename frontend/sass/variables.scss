@@ -2,12 +2,12 @@
 $blue-primary: #3b82f6;
 $blue-button: #1d4ed8;
 $purple-secondary: #8b5cf6;
-$orange-accent: #f97316;
 $background: #0f172a;
 $surface: #1e293b;
 $text-primary: #f8fafc;
 $text-secondary: #94a3b8;
-$purple-accent: #a855f7;
+$purple-text: #a78bfa;
+$purple-button: #7c3aed;
 
 // Typographie
 $font-family: "Inter", sans-serif;
@@ -25,11 +25,6 @@ $spacing-lg: 48px;
 // Rayons
 $radius-button: 8px;
 $radius-card: 12px;
-
-// Responsive
-$breakpoint-mobile: 390px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1440px;
 
 // Layout
 $container-max-width: 1440px;
