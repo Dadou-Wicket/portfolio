@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "sass": "sass frontend/sass/style.scss frontend/css/style.css --watch",
-    "backend": "node backend/app.js"
+    "backend": "node backend/app.js",
+    "start": "node backend/app.js"
   },
   "keywords": [],
   "type": "commonjs",
