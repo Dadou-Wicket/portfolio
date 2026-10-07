@@ -57,31 +57,26 @@ navigationLinks.forEach((link) => {
 const contactForm = document.querySelector(".contact__form");
 const contactStatus = document.querySelector(".contact__status");
 
-// Gère l'envoi du formulaire de contact et affiche le résultat à l'utilisateur.
+// Gère l'envoi du formulaire de contact via Netlify Forms.
 contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const submitButton = contactForm.querySelector("button[type='submit']");
   const formData = new FormData(contactForm);
-  const data = Object.fromEntries(formData.entries());
   contactStatus.textContent = "Envoi du message...";
   submitButton.disabled = true;
   try {
-    const response = await fetch("/api/contact", {
+    await fetch("/", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: JSON.stringify(data),
+      body: new URLSearchParams(formData).toString(),
     });
-    const result = await response.json();
-    if (!response.ok) {
-      throw new Error(result.message);
-    }
     contactStatus.textContent = "Votre message a bien été envoyé.";
     contactForm.reset();
   } catch (error) {
     contactStatus.textContent =
-      error.message || "Une erreur est survenue lors de l'envoi.";
+      "Une erreur est survenue lors de l'envoi du message.";
   } finally {
     submitButton.disabled = false;
   }

@@ -432,7 +432,13 @@
             Vous avez un projet web ou souhaitez échanger ? N'hésitez pas à me
             contacter.
           </p>
-          <form class="contact__form" action="#" method="post">
+          <form
+            class="contact__form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form-group">
               <label for="name">Nom</label>
               <input
