@@ -54,3 +54,41 @@ navigationLinks.forEach((link) => {
     menuButton.setAttribute("aria-label", "Ouvrir le menu");
   });
 });
+
+const contactForm = document.querySelector(".contact__form");
+const contactStatus = document.querySelector(".contact__status");
+
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const submitButton = contactForm.querySelector("button[type='submit']");
+  const formData = new FormData(contactForm);
+  const data = Object.fromEntries(formData.entries());
+
+  contactStatus.textContent = "Envoi du message...";
+  submitButton.disabled = true;
+
+  try {
+    const response = await fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.message);
+    }
+
+    contactStatus.textContent = "Votre message a bien été envoyé.";
+    contactForm.reset();
+  } catch (error) {
+    contactStatus.textContent =
+      error.message || "Une erreur est survenue lors de l'envoi.";
+  } finally {
+    submitButton.disabled = false;
+  }
+});

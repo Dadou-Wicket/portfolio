@@ -720,6 +720,15 @@ p {
   align-self: center;
 }
 
+.contact__status {
+  width: 100%;
+  margin-top: $spacing-md;
+  text-align: center;
+  color: $purple-secondary;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /* =========================
    FOOTER
    ========================= */

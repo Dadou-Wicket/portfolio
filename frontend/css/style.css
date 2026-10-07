@@ -685,6 +685,15 @@ p {
   align-self: center;
 }
 
+.contact__status {
+  width: 100%;
+  margin-top: 24px;
+  text-align: center;
+  color: #8b5cf6;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 /* =========================
    FOOTER
    ========================= */
