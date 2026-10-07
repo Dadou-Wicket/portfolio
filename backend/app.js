@@ -1,8 +1,11 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const contactRoutes = require("./routes/contact");
 
-dotenv.config();
+dotenv.config({
+  path: __dirname + "/.env",
+});
+
+const contactRoutes = require("./routes/contact");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
