@@ -4,11 +4,17 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "sass": "sass sass/style.scss css/style.css --watch"
+    "sass": "sass frontend/sass/style.scss frontend/css/style.css --watch",
+    "backend": "node backend/app.js"
   },
   "keywords": [],
   "type": "commonjs",
   "devDependencies": {
     "sass": "^1.105.1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.15"
   }
 }
