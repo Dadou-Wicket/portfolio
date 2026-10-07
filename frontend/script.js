@@ -45,6 +45,18 @@ menuButton.addEventListener("click", () => {
   );
 });
 
+// Ferme le menu mobile après avoir sélectionné une section.
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("is-open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Ouvrir le menu");
+  });
+});
+
+const contactForm = document.querySelector(".contact__form");
+const contactStatus = document.querySelector(".contact__status");
+
 // Gère l'envoi du formulaire de contact et affiche le résultat à l'utilisateur.
 contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -74,15 +86,3 @@ contactForm.addEventListener("submit", async (event) => {
     submitButton.disabled = false;
   }
 });
-
-// Ferme le menu mobile après avoir sélectionné une section.
-navigationLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("is-open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Ouvrir le menu");
-  });
-});
-
-const contactForm = document.querySelector(".contact__form");
-const contactStatus = document.querySelector(".contact__status");
