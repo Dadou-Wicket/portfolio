@@ -599,12 +599,21 @@ p {
   border-radius: $radius-card;
   overflow: hidden;
   background-color: $background;
+  box-shadow:
+    0 0 30px rgba(59, 130, 246, 0.18),
+    0 0 50px rgba(139, 92, 246, 0.12);
 }
 
 .project-card__image img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.project-card__image:hover {
+  box-shadow:
+    0 0 35px rgba(59, 130, 246, 0.28),
+    0 0 60px rgba(139, 92, 246, 0.18);
 }
 
 .project-card__content {
