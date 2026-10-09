@@ -46,6 +46,14 @@ Transformation d'un site statique en portfolio dynamique avec JavaScript, commun
 
 Refonte d'une plateforme de location immobilière avec React, Sass, React Router et une API REST.
 
+### Quiz Clash
+
+Création et publication d'une application mobile de quiz de culture générale, développée en JavaScript avec Capacitor.
+
+Le jeu propose des questions chronométrées, la personnalisation du profil avec un pseudo et un avatar, des succès à débloquer, un classement général, le partage des scores et des statistiques personnelles. Un abonnement VIP permet de jouer sans publicité et d'accéder à des avatars exclusifs.
+
+Technologies : HTML, CSS, JavaScript, Capacitor, Firebase, AdMob et Google Play Billing.
+
 ## Accessibilité
 
 Une attention particulière a été portée à l'accessibilité du portfolio :
