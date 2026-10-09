@@ -392,7 +392,7 @@ p {
   object-fit: contain;
   transition: transform 0.2s ease;
 }
-.skills__technologies li img.github-icon {
+.skills__technologies li img.contrast-icon {
   filter: brightness(0) invert(1);
 }
 .skills__technologies li:hover img, .skills__technologies li:focus-visible img {
