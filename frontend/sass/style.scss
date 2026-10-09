@@ -729,6 +729,26 @@ p {
     flex-direction: column;
     gap: $spacing-md;
     text-align: left;
+
+    // Centre le widget reCAPTCHA injecté par Netlify dans le formulaire.
+    [data-netlify-recaptcha="true"] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-inline: auto;
+      text-align: center;
+
+      > * {
+        max-width: 100%;
+        margin-inline: auto;
+      }
+
+      iframe {
+        display: block;
+        margin-inline: auto;
+      }
+    }
   }
 
   &__status {

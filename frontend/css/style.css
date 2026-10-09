@@ -585,6 +585,22 @@ p {
   gap: 24px;
   text-align: left;
 }
+.contact__form [data-netlify-recaptcha=true] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+.contact__form [data-netlify-recaptcha=true] > * {
+  max-width: 100%;
+  margin-inline: auto;
+}
+.contact__form [data-netlify-recaptcha=true] iframe {
+  display: block;
+  margin-inline: auto;
+}
 .contact__status {
   width: 100%;
   margin-top: 24px;

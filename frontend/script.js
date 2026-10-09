@@ -62,21 +62,34 @@ contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const submitButton = contactForm.querySelector("button[type='submit']");
   const formData = new FormData(contactForm);
+  const captchaResponse = formData.get("g-recaptcha-response");
+  // Vérifie que le CAPTCHA a été validé avant de tenter l'envoi.
+  if (!captchaResponse || !String(captchaResponse).trim()) {
+    contactStatus.textContent =
+      "Veuillez cocher la case « Je ne suis pas un robot » avant d'envoyer votre message.";
+    contactForm
+      .querySelector('[data-netlify-recaptcha="true"]')
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
   contactStatus.textContent = "Envoi du message...";
   submitButton.disabled = true;
   try {
-    await fetch("/", {
+    const response = await fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams(formData).toString(),
     });
+    if (!response.ok) {
+      throw new Error("L'envoi a échoué. Vérifiez le CAPTCHA et réessayez.");
+    }
     contactStatus.textContent = "Votre message a bien été envoyé.";
     contactForm.reset();
   } catch (error) {
     contactStatus.textContent =
-      "Une erreur est survenue lors de l'envoi du message.";
+      error.message || "Une erreur est survenue lors de l'envoi du message.";
   } finally {
     submitButton.disabled = false;
   }
